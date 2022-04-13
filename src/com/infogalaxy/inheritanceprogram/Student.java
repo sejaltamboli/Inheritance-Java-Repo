@@ -12,16 +12,13 @@ public class Student {
         name = sc.next();
     }
 }
-class Result extends Student {
-    void getResult () {
-        System.out.println("Student ID is: " + id);
-        System.out.println("Student Name is: " + name);
-    }
-}
-class Main {
-    public static void main(String[] args) {
-        Result result = new Result();
-        result.setStudent();
-        result.getResult();
+class Internal extends Student {
+    int im1;
+    int im2;
+
+    void setMarks() {
+        System.out.println("Enter M1 and M2: ");
+        im1 = sc.nextInt();
+        im2 = sc.nextInt();
     }
 }
